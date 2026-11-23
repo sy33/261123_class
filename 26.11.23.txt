@@ -25,5 +25,7 @@ HTML, CSS, JavaScript를 각각 index.html, style.css, script.js로 분리해줘
 메모할 내용은 수정사항에 대한 언급이야.
 지금까지 작업한 내용 커밋 푸시해줘.
 
+커밋 메모
+푸시 깃허브로 저장
 
 
