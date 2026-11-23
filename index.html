@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>민준 ♥ 수연 결혼합니다</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="invitation">
+
+    <!-- 메인 커버 -->
+    <section class="cover">
+      <p class="cover-label">WEDDING INVITATION</p>
+      <div class="cover-photo" aria-hidden="true">
+        <span class="cover-initial">M &amp; S</span>
+      </div>
+      <h1 class="cover-names">김민준 <span class="amp">&amp;</span> 이수연</h1>
+      <p class="cover-date">2027. 04. 17. 토요일 오후 1시</p>
+      <p class="cover-place">더채플 앳 청담 3층 그레이스홀</p>
+    </section>
+
+    <!-- 인사말 -->
+    <section class="section greeting fade-in">
+      <h2 class="section-title">INVITATION</h2>
+      <p class="greeting-text">
+        서로 다른 길을 걸어온 두 사람이<br>
+        이제 같은 길을 함께 걸어가려 합니다.<br><br>
+        봄날의 햇살처럼 따뜻한 마음으로<br>
+        저희의 첫걸음을 축복해 주시면<br>
+        더없는 기쁨으로 간직하겠습니다.
+      </p>
+      <div class="parents">
+        <p><span class="parent-names">김철수 · 박영희</span>의 아들 <strong>민준</strong></p>
+        <p><span class="parent-names">이정호 · 최미경</span>의 딸 <strong>수연</strong></p>
+      </div>
+    </section>
+
+    <!-- 예식 일시 / 달력 -->
+    <section class="section date-section fade-in">
+      <h2 class="section-title">WEDDING DAY</h2>
+      <p class="date-text">2027년 4월 17일 토요일 오후 1시</p>
+      <div class="calendar" id="calendar"></div>
+      <p class="dday" id="dday"></p>
+    </section>
+
+    <!-- 갤러리 -->
+    <section class="section gallery-section fade-in">
+      <h2 class="section-title">GALLERY</h2>
+      <div class="gallery" id="gallery">
+        <!-- 사진을 넣으려면 div를 <img src="images/photo1.jpg" alt=""> 로 바꾸세요 -->
+        <div class="gallery-item" data-index="1"></div>
+        <div class="gallery-item" data-index="2"></div>
+        <div class="gallery-item" data-index="3"></div>
+        <div class="gallery-item" data-index="4"></div>
+        <div class="gallery-item" data-index="5"></div>
+        <div class="gallery-item" data-index="6"></div>
+      </div>
+    </section>
+
+    <!-- 오시는 길 -->
+    <section class="section location fade-in">
+      <h2 class="section-title">LOCATION</h2>
+      <p class="venue-name">더채플 앳 청담</p>
+      <p class="venue-address" id="venueAddress">서울특별시 강남구 선릉로 757</p>
+      <div class="map-buttons">
+        <a class="btn" href="https://map.naver.com/p/search/더채플앳청담" target="_blank" rel="noopener">네이버 지도</a>
+        <a class="btn" href="https://map.kakao.com/?q=더채플앳청담" target="_blank" rel="noopener">카카오맵</a>
+        <button class="btn" type="button" data-copy="서울특별시 강남구 선릉로 757">주소 복사</button>
+      </div>
+      <dl class="transport">
+        <dt>지하철</dt>
+        <dd>7호선 청담역 13번 출구 도보 10분</dd>
+        <dt>버스</dt>
+        <dd>청담사거리 정류장 하차 (141, 242, 361)</dd>
+        <dt>주차</dt>
+        <dd>건물 내 주차장 이용 (2시간 무료)</dd>
+      </dl>
+    </section>
+
+    <!-- 마음 전하실 곳 -->
+    <section class="section account fade-in">
+      <h2 class="section-title">마음 전하실 곳</h2>
+      <div class="accordion">
+        <button class="accordion-header" type="button">신랑측 계좌번호</button>
+        <div class="accordion-body">
+          <div class="account-row">
+            <span>신랑 김민준 · 국민 123-456-789012</span>
+            <button class="copy-btn" type="button" data-copy="국민 123-456-789012">복사</button>
+          </div>
+          <div class="account-row">
+            <span>아버지 김철수 · 신한 110-123-456789</span>
+            <button class="copy-btn" type="button" data-copy="신한 110-123-456789">복사</button>
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <button class="accordion-header" type="button">신부측 계좌번호</button>
+        <div class="accordion-body">
+          <div class="account-row">
+            <span>신부 이수연 · 우리 1002-123-456789</span>
+            <button class="copy-btn" type="button" data-copy="우리 1002-123-456789">복사</button>
+          </div>
+          <div class="account-row">
+            <span>어머니 최미경 · 하나 123-456789-01234</span>
+            <button class="copy-btn" type="button" data-copy="하나 123-456789-01234">복사</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 방명록 -->
+    <section class="section guestbook fade-in">
+      <h2 class="section-title">GUESTBOOK</h2>
+      <form class="guest-form" id="guestForm">
+        <input type="text" id="guestName" placeholder="이름" maxlength="10" required>
+        <textarea id="guestMessage" placeholder="축하 메시지를 남겨주세요" maxlength="200" rows="3" required></textarea>
+        <button class="btn btn-primary" type="submit">남기기</button>
+      </form>
+      <ul class="guest-list" id="guestList"></ul>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <button class="btn" type="button" id="shareBtn">청첩장 링크 복사</button>
+      <p class="footer-text">저희 두 사람의 시작을 함께해 주셔서 감사합니다.</p>
+    </footer>
+  </main>
+
+  <!-- 사진 확대 보기 -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="닫기">&times;</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
